@@ -1,3 +1,11 @@
+# -*- coding: utf-8 -*-
+
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
 s_input = """
 3
 
@@ -16,3 +24,21 @@ x 3 x | x x x | x 7 8
 
 print (s_input)
 
+print ("*****************************")
+i = 0
+first_number = False
+
+for line in s_input.splitlines():
+    print (str(i) + " " + line + " " + str(len(line)))
+    i = i + 1
+
+    if ((first_number == False) and len(line) == 1):
+        size = int(line) * int(line)
+        break
+
+        arr = [s_input]
+    print(arr[0][0])
+
+print (size)
+
+# for line in s_input.splitlines():
